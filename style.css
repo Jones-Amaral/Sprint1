@@ -93,7 +93,7 @@ main {
 }
 
 .vejaMais {
-    
+
     width: 200px;
     height: 75px;
     border: solid 4px #022b10;
@@ -110,19 +110,87 @@ main {
     justify-content: center;
 }
 
-.icone-hamburguer {
+
+
+/* Menu Hamburguer */
+.icone-hamburguer-img {
     width: 40px;
     position: fixed;
-    top: 100px;
-    left: 30px;
+    top: 20px;
+    left: 150px;
 }
+
+.menu-lateral ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.borda{
+    border-bottom: 2px solid #e7f5e9;
+    padding-bottom: 30px;
+}
+.menu-lateral ul {
+ padding-left: 0;
+ margin: 0;
+}
+.menu-lateral ul li {
+    list-style-type: none;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+
+.imgHamburguer{
+    width: 50px;
+}
+
+.menu-lateral {
+    display: none;
+    position: fixed;
+    top: 100px;
+    left: 20px;
+    bottom: 50px;
+    width: 300px;
+    height: 700px;
+    background-color: #0a1a37;
+    color: #e7f5e9;
+    padding-top: 60px;
+    z-index: 999;
+    padding: 20px;
+    border-radius: 5px;
+
+    text-align: center;
+}
+
+.menu-lateral.show {
+    display: block;
+}
+
+/* Botão de fechar */
+.fechar-menu {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    color: #e7f5e9;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Fim menu Hamburguer */
 
 .autor,
 .data {
     color: #022b10;
 }
 
-.favoritar{
+.favoritar {
     width: 60px;
     position: fixed;
     right: 30px;
@@ -136,7 +204,8 @@ h1 {
     font-size: 40px;
     color: #034C1C;
 }
-h2{
+
+h2 {
     font-weight: 500;
     text-decoration: underline;
     font-size: xx-large;
@@ -177,7 +246,7 @@ p {
 
 .comentarios {
     display: grid;
-    
+
     background-color: #b3e69e;
 }
 
@@ -185,7 +254,7 @@ p {
     padding: 20px;
     display: flex;
     flex-direction: column;
-    
+
 
 }
 
@@ -224,18 +293,20 @@ input::placeholder {
 }
 
 
-.iconeUsuario{
+.iconeUsuario {
     width: 50px;
 }
 
-.comentariosUsuarios{
+.comentariosUsuarios {
     margin: 0 30px;
 }
+
 .comentariosUsuarios p {
     margin: 0;
     margin-left: 80px;
 }
-.comentarioUsuario{
+
+.comentarioUsuario {
     height: 100px;
     margin: 0 20px;
     border: solid 3px #021d0b;
@@ -274,9 +345,10 @@ input::placeholder {
     text-align: center;
 }
 
-#comentarioInserido{
+#comentarioInserido {
     margin-top: 20px;
 }
+
 /* Detalhes Fim */
 
 /* Media */

@@ -31,12 +31,14 @@
 
         <div class="menu-lateral" id="menuLateral">
             <button class="fechar-menu" id="fecharMenu">X</button>
-                <ul>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                </ul>
+            <ul>
+                <li class="borda"><a href="#"><img class="imgHamburguer" src="/img/hamburguer/usuario.png" alt="Usuário">Minha Conta</a></li>
+                <li class="borda"><a href="#"><img class="imgHamburguer" src="/img/hamburguer/lupa.png" alt="Lupa">Pesquise Aqui</a></li>
+                <li class="borda"><a href="#"><img class="imgHamburguer" src="/img/hamburguer/interrogacao.png" alt="Tutorial">Tutoriais</a></li>
+                <li class="borda"><a href="#"><img class="imgHamburguer" src="/img/hamburguer/planilha.png" alt="Planilha">Planilha</a></li>
+                <li class="borda"><a href="#"><img class="imgHamburguer" src="/img/hamburguer/chat.png" alt="Converse Conosco">Converse Conosco</a></li>
+                <li><a href="#"><img class="imgHamburguer" src="/img/hamburguer/like.png" alt="">Favoritos</a></li>
+            </ul>
             </button>
         </div>
 
@@ -85,7 +87,7 @@
                         <div class="noticia">
                             <div class="imagemNoticia">
                                 <a href="detalhes.html?id=${noticia.id}">
-                                    <img src="${noticia.banner}" class="imagem" alt="${noticia.         descricao}">
+                                    <img src="${noticia.banner}" class="imagem" alt="${noticia.descricao}">
                             </div>
                             <div class="texto">
                                 <h1>${noticia.titulo}</h1></a>
@@ -106,6 +108,22 @@
                 } else {
                     document.querySelector(".vejaBtn").style.display = "block";
                 }
+
+                /* Botão Hamburguer */
+                // Selecionando os elementos
+                const menuLateral = document.getElementById('menuLateral');
+                const hamburguerMenu = document.getElementById('hamburguerMenu');
+                const fecharMenu = document.getElementById('fecharMenu');
+
+                // Quando o botão de hambúrguer for clicado, abre o menu
+                hamburguerMenu.addEventListener('click', function () {
+                    menuLateral.classList.add('show');
+                });
+
+                // Quando o botão de fechar for clicado, fecha o menu
+                fecharMenu.addEventListener('click', function () {
+                    menuLateral.classList.remove('show');
+                });
             }
         </script>
     </footer>
