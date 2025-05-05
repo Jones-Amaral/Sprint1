@@ -1,5 +1,4 @@
-# Sprint1
-Sprint 1 de Tiaw
+# Sprint 1 #
 
 Aluno: João Vitor Alves Amaral
 Matrícula: 882594
